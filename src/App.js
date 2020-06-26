@@ -13,7 +13,7 @@ function App() {
       const response = await fetch('https://api.github.com/users/omamazainab/repos'); 
       const data = await response.json();
       setRepo(data);
-      
+       
     }
     fetchRepos();
 
@@ -25,7 +25,7 @@ function App() {
       <ul>
         {
           repo.map( (repoObj) => {
-            return (<li>{repoObj.name}</li>)
+            return (<li> {repoObj.name} </li>)
           })
         }
       </ul>
